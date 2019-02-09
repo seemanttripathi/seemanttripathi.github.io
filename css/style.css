@@ -37,6 +37,7 @@ header nav ul li a:hover{
 header nav{
 	float: right;
 }
+
 .logo{
 	height: 20%;
 	width: 20%;
@@ -314,4 +315,62 @@ footer{
 	background-size: cover;
 	height: 75em;
 	width: 100%;
+}
+
+
+
+.notfilled{
+	height: 34%;
+}
+
+
+
+.ourteamis h4,.ourteamis p{
+	text-align: center;
+}
+.ourteammembers{
+	width: 22%;
+	float: left;
+	margin: 1%;
+	text-align: center;
+	background-color: #EBF4F7;
+}
+.ourteammembers:hover{
+	background-color: gray;
+	color: #fff;
+	transition: 0.6s ease-in;
+	border-top: 7px solid #000;
+	border-bottom: 5px solid #000
+
+	;
+	border-radius: 15px;
+}
+.ourteammembers p{
+	line-height: 25px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding: 2px 8px 25px 10px;
+	font-size: 100%;
+}
+.ourteammembers img{
+	width: 40%;
+	margin-bottom: ;
+}
+.ourteammembers h3{
+	color: #1A6FFB;
+	font-weight: bold;
+	font-size: 160%;
+}
+.ourteammembers h4{
+	font-size: 150%;
+}
+.sequencing{
+	margin: 6%;
+	margin-left: 10%;
+}
+
+@media screen and (max-width: 500px){
+	body{
+		background-size: cover;
+	}
 }
