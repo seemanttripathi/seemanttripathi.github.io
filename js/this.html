@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Space</title>
+	<style type="text/css">
+		.loginform{
+			border :1px solid black;
+			align-content: center;
+			text-align: center;
+			margin: 1%;
+			padding: 10%;
+		}
+		.dualbrdr{
+			border :1px solid black;
+			text-align: center;
+			margin: 10%;
+		}
+		h2{
+			visibility: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="dualbrdr">
+	<div class="loginform">
+		<h1>Admin Space</h1>
+		<form onsubmit=" return fn1()" action="index21.html">
+			<input type="text" id="user" placeholder="Username" name=""><br><br>
+			<input type="text" id="pass" placeholder="Password"  name=""><br><br>
+			<button type="submit">Submit</button>
+		</form>
+	</div></div>
+	<!--  <h2>Seemant Tripathi
+	<iframe width="800" height="435" src="https://www.youtube.com/embed/5X7WWVTrBvM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></h2> -->
+</body>
+<script type="text/javascript">
+	function fn1() {
+			var username=document.getElementById("user").value.trim();
+			var password=document.getElementById("pass").value.trim();
+
+			if (username=="karragi" && password=="ha") {
+				true;
+			}
+			else{
+				alert("Login Denied...!!!");
+				return false;
+			}
+		}
+
+</script>
+</html>
