@@ -1,288 +1,323 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Responsive design</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/carofredsel.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>ATRI</title>
 </head>
 <body>
 
-	<!--Header Part-->
 
-	<header>
-		<div class="container">
-			<div class="row">
-				<a href="" class="logo"><img src="image/dslogo.png" class="logo"></a>
-				<nav>
-					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="js/this.html">Work</a></li>
-						<li><a href="index2.html">Services</a></li>
-						<li><a href="nptel_soln.html">NPTEL Work</a></li>
-						<li><a href="">Our Team</a></li>
-						<li><a href="">Contact</a></li>
-					</ul>
-				</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#courses">Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#events">Events</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Signup</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<div class="background_img down1">
+	<div class="row">
+		<div class="offset-1 col-md-5 ">
+			<div class="text-white">
+				<h1 style="font-size:50px;">Agnihotri<br>Transformation<br>and Research Institute</h1>
 			</div>
 		</div>
-	</header>
-	<!--<section>
-		<div>
-			<form>
-				<div class="input-group">
-					<input type="text" name="Search" placeholder="Search" class="form-control">
-					<div class="input-group-btn">
-						<button class="btn btn-default" type="submit">
-							<i class="glyphicon glyphicon-search"></i>
-						</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</section>-->
-	<!--Section 1-->
-	<section class="slider">
-		<ul class="slider-carousel" id="slider-carousel">
-			<li class="image1">
-				<h2>BEAUTYFIED BUSINESS <span>TEMPLATE</span></h2>
-				<p>We believe in creativity always</p>
-				<i class="fa fa-apple"></i>
-				<i class="fa fa-android"></i>
-				<i class="fa fa-windows"></i>
-				<p><br>
-					You’re editing a file in a project you don’t have write access to. <br>We’ve created a fork of this project for you to commit your proposed changes to.<br> Submitting a change to this file will write it to a new branch in your fork, so you can send a pull request.
-				</p><br>
-				<a href="" class="btn btn-half">Get Started</a>
-				<a href="" class="btn btn-full">Buy Now</a>
-			</li>
-			<li class="image2">
-				<h2>BEAUTYFIED BUSINESS <span>TEMPLATE</span></h2>
-				<p>We believe in creativity always</p>
-				<i class="fa fa-apple"></i>
-				<i class="fa fa-android"></i>
-				<i class="fa fa-windows"></i>
-				<p><br>
-					You’re editing a file in a project you don’t have write access to. <br>We’ve created a fork of this project for you to commit your proposed changes to.<br> Submitting a change to this file will write it to a new branch in your fork, so you can send a pull request.
-				</p><br>
-				<a href="" class="btn btn-half">Get Started</a>
-				<a href="" class="btn btn-full">Buy Now</a>
-			</li>
-			<li class="image3">
-				<h2>BEAUTYFIED BUSINESS <span>TEMPLATE</span></h2>
-				<p>We believe in creativity always</p>
-				<i class="fa fa-apple"></i>
-				<i class="fa fa-android"></i>
-				<i class="fa fa-windows"></i>
-				<p><br>
-					You’re editing a file in a project you don’t have write access to. <br>We’ve created a fork of this project for you to commit your proposed changes to.<br> Submitting a change to this file will write it to a new branch in your fork, so you can send a pull request.
-				</p><br>
-				<a href="" class="btn btn-half" onclick="revealMessage()">Get Started</a>
-				<a href="" class="btn btn-full" onclick="revealMessage()">Buy Now</a>
-				<p id="hiddenMessage" style="display: none;">The Backend Of the WebSite Is currently Inactive-"Sorry For the inconvinent"</p>
-			</li>
-		</ul>
-	</section>
-
-	<!--Section 2-->
-
-	<section class="intro-area white" id="intro">
-		<div class="container">
-			<div class="col-sm-12 text-center">
-				<h2>WORK WITH SMILE</h2>
-				<div class="sub-heading">
-					<p>
-						There are majority have suffered alteration in some form industry. Majority by injected humour, or <br>randomised words which don't look even slightly believable.
-					</p>
-				</div>
+		<div class=" offset-1 col-md-4 ">
+			<div class="text-white">
+				<h1 style="font-size:140px;">ATRI</h1>
 			</div>
 		</div>
-		<div class="allthree">
-			<div class="sizingdivs" id="firstblock">
-				<img src="image/logotype2.png" alt="img_logo_type" class="imageadjust">
-				<h4>Unique Design</h4>
-				<p>In this article we cover the absolute basics of HTML, to get you started. We define elements, attributes,<br> and where they fit into the language. We also show how an HTML element is structured, how a typical HTML<br> page is structured</p>
-			</div>
-			<div class="sizingdivs">
-				<img src="image/logotype2.png" alt="img_logo_type" class="imageadjust">
-				<h4>Corporate Branding</h4>
-				<p>In this article we cover the absolute basics of HTML, to get you started. We define elements, attributes, and where<br> they fit into the language. We also show how an HTML element is structured, how a typical  attributes, and <br>HTML page is structured</p>
-			</div>
-			<div class="sizingdivs">
-				<img src="image/logotype2.png" alt="img_logo_type" class="imageadjust">
-				<h4>Conrorate Branding</h4>
-				<p>In this article we cover the absolute basics of HTML,<br> to get you started. We define elements, attributes, and where they fit into the language. We also show how<br> an HTML element is structured, how a typical HTML page is structured</p>
-			</div>
+	</div>
+</div>
+
+
+<!--About Section-->
+<div id="about" class="offset-0 offset-md-0 col-md-12 px-lg-5 px-md-4 px-0 pt-4" style="background-color: #042047">
+	<div class="row mt-4 m-1 p-2 mb-5">
+		<div class="col-xl-6  text-white p-5">
+			<h1 style="font-size:50px;">About Us</h1><br>
+			<h5 class="text-center offset-md-1 p-3" style="line-height: 140%;">One of three columns Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h5>
 		</div>
-	</section>
-
-	<!--Section 3-->
-
-	<section class="forimg">
-		<div>
-			<h2>WORK FEATURE</h2>
-			<div class="sub-heading">
-				<p>There are majority have suffered alteration in some form industry. Majority by injected humour, or <br>randomised words which don't look even slightly believable.
-				</p>
-			</div>
-		</div>
-		<div >
-			<div class="justtofloat">
-				<div class="twoonly pickdown">
-					<div class="leftsiding" id="toborderone">
-						<img src="image/logorohan.png" alt="logo type img" class="imageadjusting">
-						<h4>CUSTOMER SCROLLBARS</h4>
-						<p>There are three main ways to apply CSS styling. Alternatively, rules within style tags in an HTML document. </p>
-					</div>
-					<div class="leftsiding sidingone" id="tobordertwo">
-						<img src="image/logorohan.png" alt="logo type img" class="imageadjusting">
-						<h4> ROBUST DEMO PACKAGE</h4>
-						<p>There are three main ways to apply CSS styling. Alternatively, rules within style tags in an HTML document. </p>
-					</div>
-				</div>
-				<div class="twoonly">
-					<div class="leftsiding" id="toborderthree">
-						<img src="image/logorohan.png" alt="logo type img" class="imageadjusting">
-						<h4>EASY TO USE</h4>
-						<p>There are three main ways to apply CSS styling. Alternatively, rules within style tags in an HTML document. </p>
-					</div>
-					<div class="leftsiding sidingtwo" id="toborderfour">
-						<img src="image/logorohan.png" alt="logo type img" class="imageadjusting">
-						<h4>TONS OF API CALLBACK</h4>
-						<p>There are three main ways to apply CSS styling. Alternatively, rules within style tags in an HTML document. </p>
-					</div>
-				</div>
-			</div>
-			<div class="largesizeimg">
-				<img src="image/tabletpng.png" alt="main image">
-			</div>
-		</div>
-	</section>
-
-	<!--Section 4-->
-
-	<section class="backgroubding">
-		<div class="justtoalign">
-			<h2>MOBILE FEATURE</h2>
-			<div class="sub-heading">
-				<p>There are majority have suffered alteration in some form industry. Majority by injected humour, or <br>randomised words which don't look even slightly believable.
-				</p>
-			</div>
-		</div>
-		<div>
-			<div class="bigbimg">
-				<img src="image/tabletimage.png" alt="tablet image" class="adjustingmanimg">
-			</div>
-			<div class="rightcontent">
-				<ul>
-					<li>
-						<img src="image/randglogo.png" alt="logo type">
-						<div class="hpadjusting">
-						<h4>RETINA DISPLAY</h4>
-						<p>Generic font families are a fallback mechanism, a means of preserving some of the style sheet </p>
-						</div>
-					</li>
-					<li>
-						<img src="image/randglogo.png" alt="logo type">
-						<div class="hpadjusting">
-						<h4>BEAUTIFUL CALLBACKS</h4>
-						<p>Generic font families are a fallback mechanism, a means of preserving some of the style sheet </p>
-						</div>
-					</li>
-					<li>
-						<img src="image/randglogo.png" alt="logo type">
-						<div class="hpadjusting">
-						<h4>IOS/WINDOWS/ANDROID</h4>
-						<p>Generic font families are a fallback mechanism, a means of preserving some of the style sheet </p>
-						</div>
-					</li>
-					<li>
-						<img src="image/randglogo.png" alt="logo type">
-						<div class="hpadjusting">
-						<h4>AUTO REDIRECT</h4>
-						<p>Generic font families are a fallback mechanism, a means of preserving some of the style sheet </p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
-
-	<!--Section 5-->
-
-	<section class="notfilled">
+	
 		
-	</section>
-
-	<!--Section 6-->
-
-	<section>
-		<div class="ourteamis">
-			<h4>OUR TEAM</h4>
-			<p>There are majority have suffered alteration in some form industry. Majority by injected humour, or <br>randomised words which don't look even slightly believable.</p>
+		<div class="col-xl-5 offset-md-1 embed-responsive-16by9 mb-4 text-center">
+			<img src="images1/Knowledge.png" alt="img" class="" style="width: 85%; height: auto;">
 		</div>
-		<div class="sequencing">
-			<div class="ourteammembers">
-				<img src="image/profile.png" alt="team members logo">
-				<h3>NICK LEE</h3>
-				<h4>Project Manager</h4>
-				<p>CSS stands for Cascading Style Sheets.<br> CSS describes how HTML elements are to be displayed on screen, layout of multiple web pages all at once.</p>
-			</div>
-			<div class="ourteammembers">
-				<img src="image/profile.png" alt="team members logo">
-				<h3>HUWAN P</h3>
-				<h4>Project Manager</h4>
-				<p>CSS stands for web pages all at.<br> CSS describes how HTML elements are to be displayed on screen, <br>layout of multiple web pages all at once.</p>
-			</div>
-			<div class="ourteammembers">
-				<img src="image/profile.png" alt="team members logo">
-				<h3>HUMERA</h3>
-				<h4>Project Manager</h4>
-				<p>CSS stands for Style Sheets.<br> CSS describes how HTML<br> elements are to be displayed on screen, layout of multiple web pages all at once.</p>
-			</div>
-			<div class="ourteammembers">
-				<img src="image/profile.png" alt="team members logo">
-				<h3>LYNSA</h3>
-				<h4>Project Manager</h4>
-				<p>CSS stands for Cascading Style Sheets.<br> CSS describes how HTML elements are to be, layout of multiple web pages all at once.</p>
+	</div>
+</div>
+
+
+<!--Course Section-->
+
+<div id="courses" class="offset-0 offset-md-0 col-12 px-lg-5 px-md-4 px-0 pt-4 text-white"style="background-color: #042047">
+    <div class="t-align-c mb-5">
+  		<h2>COURSES</h2>
+  		<h5 class="bold mt-3">Participate and improve your coding skills</h5>
+	</div>
+	<div class="row justify-content-center">
+  		<div class="col-12 col-md-4 col-lg-3 display">
+    		<div id="ember173" class="ember-view mb-4"><div class="border-card p-0 contest-card">
+  				<div class="p-xl-5 p-3 white position-relative bg-gradient-pink">
+    				<h2>College <br> Contests</h2>
+    				<div class="bold mt-4">0 Contests</div>
+    				<img src="" alt="img" class="position-absolute contest-card__header-img">
+  				</div>
+  				<div class="py-5 px-lg-5 px-4 t-align-c">
+    				<div>	Looking for a college event instead ? Proceed through here to take part in contest being organised by colleges throughout India, get informed about the upcoming ones and solve questions of archived contests.
+    				</div>
+    				<a href="/app/contests/college/all/live" id="ember174" class="ember-view">
+      					<button class="button-solid button-orange font-sm mt-4">
+        					View Contests
+      					</button>
+    				</a>
+  				</div>
 			</div>
 		</div>
-	</section>
+  	</div>
+  	<div class="col-12 col-md-4 col-lg-3 display">
+    	<div id="ember175" class="ember-view mb-4"><div class="border-card p-0 contest-card">
+  			<div class="p-xl-5 p-3 white position-relative bg-gradient-purple-blue">
+    			<h2>Course <br> Contests</h2>
+    <div class="bold mt-4">66 Contests</div>
+    <img src="/app/images/coursecontest_w-68694f50421feebe510ad2d70078c445.png" alt="" class="position-absolute contest-card__header-img">
+  </div>
+  <div class="py-5 px-lg-5 px-4 t-align-c">
+    <div>
+      Are you a Coding Blocks champion ? Enter the arena and start solving your favourite assignment questions. New to Coding Blocks ? Worry not you can still take parts in some of these contests. Proceed to know more.
+    </div>
+    <a href="/app/contests/course" id="ember176" class="ember-view">
+      <button class="button-solid button-orange font-sm mt-4">
+        View Contests
+      </button>
+    </a>
+  </div>
+</div>
+</div>
+  </div>
+  <div class="col-12 col-md-4 col-lg-3 display">
+    <div id="ember177" class="ember-view mb-4"><div class="border-card p-0 contest-card">
+  <div class="p-xl-5 p-3 white position-relative bg-gradient-blue">
+    <h2>Admission <br> Contests</h2>
+    <div class="bold mt-4">0 Contests</div>
+    <img src="/app/images/admissioncontest_w-097cf2311eb430200ea8e36d7dbe0107.png" alt="" class="position-absolute contest-card__header-img">
+  </div>
+  <div class="py-5 px-lg-5 px-4 t-align-c">
+    <div>
+      Experience the APAT (Advanced Program Admission and scholarship test) and CAST (Coders admission and scholarship test) in an all new environment. Take part in archived contests and register for upcoming ones.
+    </div>
+    <a href="/app/contests/admission" id="ember178" class="ember-view">
+      <button class="button-solid button-orange font-sm mt-4">
+        View Contests
+      </button>
+    </a>
+  </div>
+</div>
+</div>
+  </div>
+  <div class="col-12 col-md-4 col-lg-3 display">
+    <div id="ember179" class="ember-view mb-4"><div class="border-card p-0 contest-card">
+  <div class="p-xl-5 p-3 white position-relative bg-gradient-lgreen">
+    <h2>Hiring <br> Contests</h2>
+    <div class="bold mt-4">0 Contests</div>
+    <img src="/app/images/hiringcontest_w-2534341ec6a1ce22239703959aa84927.png" alt="" class="position-absolute contest-card__header-img">
+  </div>
+  <div class="py-5 px-lg-5 px-4 t-align-c">
+    <div>
+      Tired of not being able to get your dream job ? Participate in these amazing set of contests to get a hold of the type of questions being asked by major companies and take part in hiring contests being organised by companies on our panel.
+    </div>
+    <a href="/app/contests/hiring" id="ember180" class="ember-view">
+      <button class="button-solid button-orange font-sm mt-4">
+        View Contests
+      </button>
+    </a>
+  </div>
+</div>
+</div>
+  </div>
+</div>
 
-	<!--Section 7-->
+    </div>
 
-	<section>
-		
-	</section>
+<!--Demo Video Section-->
 
-	<!--Footer Part-->
+<div id="events" class="container display">
+    <!--Grid row-->
+    <div class="row d-flex justify-content-center">
+      <!--Grid column-->
+      <div class="col-md-6">
+        <!-- Video -->
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+</div>
 
-	<footer>
-		<div class="box">
-			<h3>Login</h3>
-			<form>
-				<div class="inputBox">
-					<input type="text" name="" required="">
-					<label>Username</label>
-				</div>
-				<div class="inputBox">
-					<input type="password" name="" required="">
-					<label>Password</label>
-				</div>
-				<input type="submit" name="" value="Submit">
-			</form>
-		</div>
-	</footer>
 
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+
+
+<!-- Footer -->
+<footer id="contact" class="page-footer font-small mdb-color lighten-3 pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+          esse
+          quasi, veritatis totam voluptas nostrum.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#!">PROJECTS</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">ABOUT US</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">BLOG</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">AWARDS</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2018 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
 </body>
 </html>

@@ -1,35 +1,17 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-.site-header{
-	margin:0;
-	background-color: #212529;
-}
-.bg-dark1{
-	width: 45%;
-	margin-left: 5%;
-	margin-top: 10px;
-}
-.bg-light{
-	width: 45%;
-	margin-top: 10px;
-}
-.d-none{
-	float: left;
-}
-.jumbotron{
-	width: 70%;
-	margin-left: 30px;
-	margin-top: 70px;
-}
-.display-31{
-	padding-left: 10%;
-}
-.jumbotron2{
-	width: 95%;
-}
-.album{
+.background_img{
+	background-image: url('images1/background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 95vh;
 	width: 100%;
-	float: right;
+}
+.dispblay{
+	border: 2px solid;
+}
+.dark_back{
+	background-color: black;
+}
+.down1{
+	margin-top: 56px;
 }
