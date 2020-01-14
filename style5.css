@@ -1,0 +1,70 @@
+.navbar-brand img{
+	height: 2rem;
+}
+body {
+	overflow-x: hidden; /*--right gutter fix--*/
+}
+.navbar{
+  background-color: ##f7f7f7 ;
+}
+.card:hover{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+.box{
+  border: 2px solid black;
+}
+.home-inner{
+  background-image: url("images/background3.png");
+}
+.caption{
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+}
+.caption h3{
+  color: #fff;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+.btn{
+  border-width: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: .5rem 1.1rem
+  font-size: .9rem;
+}
+/*--- iOS Landing Page Fix --*/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  background: #E9ECEF;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
